@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:wght@500;700&display=swap');
 
 * {
   margin: 0;
@@ -11,24 +10,105 @@ body {
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
   background-color: #f2ebe3;
+  margin: 0 32px;
 }
 
 .card {
-  width: 800px;
+  max-width: 750px;
+  min-width: 700px;
   margin: 0 auto;
   background-color: #fff;
   height: auto;
+  margin-top: 5rem;
+  border-radius: 12px;
+}
+
+.flex-container {
+  display: flex;
 }
 
 .product-image {
   height: 572px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.product-details-container {
+  flex-direction: column;
+  margin: 36px 34px;
+  justify-content: space-between;
+}
+
+.subheading {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 22px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: #6c7289;
 }
 
 .fraunces {
   font-family: 'Fraunces', serif;
+  font-size: 2.525rem;
+  font-weight: 700;
+  line-height: 104%;
+  color: #1c232b;
 }
 
 .perfume {
   line-height: 22px;
   letter-spacing: 0.4em;
+}
+
+.product-info {
+  color: #6c7289;
+  font-weight: 500;
+  /* font-size: 18px; */
+  line-height: 160%;
+}
+
+.chanel {
+  text-transform: uppercase;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  color: #6c7289;
+  align-items: center;
+}
+
+.sale-price {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 150%;
+  color: #3d8168;
+}
+
+.full-price {
+  font-size: 14px;
+  text-decoration-line: line-through;
+  margin-right: 5rem;
+}
+
+.btn {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 12px;
+  background-color: #3d8168;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    background-color: blue;
+  }
 }
